@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class GuessNumber {
 
@@ -14,6 +15,14 @@ public class GuessNumber {
 		// secret. If user guesses the secret right then app shows "You won"
 		// and exits. If user cannot guess a number in 10 attempts then app
 		// shows "You lost" and exits.
+		System.out.println("Imput a number between 1 and 100");
+		Scanner in = new Scanner(System.in);
+		int userNumber = in.nextInt();
+		if (userNumber == secret) {
+			System.out.println("You win " + secret);
+		} else {
+			System.out.println("You lost " + secret);
+		}
 	}
 
 }
