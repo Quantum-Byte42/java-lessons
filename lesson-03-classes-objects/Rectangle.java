@@ -15,6 +15,7 @@ class Rectangle {
 	double perimeter() {
 		// TODO: calculate and return perimeter (see "square" method above as
 		// example)
+		return (a+b)*2;
 	}
 
 	void show() {
@@ -25,8 +26,9 @@ class Rectangle {
 
 	public static void main (String[] args) {
 		// TODO: create new rectangle (see LightBulb.java as example)
-
+		Rectangle rectangle = new Rectangle(10, 12);
 		// TODO: call the "show" method of the rectangle (see LightBulb.java as example)
+		rectangle.show();
 	}
 
 }
